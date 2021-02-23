@@ -1,3 +1,4 @@
+require('boostrap');
 let transactions = [];
 let myChart;
 
