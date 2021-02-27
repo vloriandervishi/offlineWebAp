@@ -5,6 +5,7 @@
   "main": "server.js",
   "dependencies": {
     "boostrap": "^2.0.0",
+    "compression": "^1.7.4",
     "express": "^4.17.1",
     "mongoose": "^5.11.17",
     "morgan": "^1.10.0"
@@ -15,7 +16,6 @@
     "webpack-dev-server": "^3.11.2"
   },
   "scripts": {
-    
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
