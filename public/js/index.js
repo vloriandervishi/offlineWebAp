@@ -1,7 +1,7 @@
-require('boostrap');
+// require('boostrap');
 let transactions = [];
 let myChart;
-
+console.log("index.js is loaded");
 fetch("/api/transaction")
   .then(response => {
     return response.json();
@@ -113,6 +113,7 @@ function sendTransaction(isAdding) {
   populateTable();
   populateTotal();
   
+  console.log("post call");
   // also send to server
   fetch("/api/transaction", {
     method: "POST",
