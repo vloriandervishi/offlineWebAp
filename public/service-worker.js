@@ -16,13 +16,13 @@ const FILES_TO_CACHE= [
     "./icons/icon-96x96.png",
     "./js/index.js",
     "./js/idb.js",
-    "./manifest.json",
+    
     
 
 ];
 // Respond with cached resources
 self.addEventListener('fetch', function(evt) {
-    if (evt.request.url.includes('/api/')) {
+    if (evt.request.url.includes('/api')) {
       evt.respondWith(
         caches
           .open(DATA_CACHE_NAME)
