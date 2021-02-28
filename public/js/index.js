@@ -1,7 +1,7 @@
 // require('boostrap');
 let transactions = [];
 let myChart;
-console.log("index.js is loaded");
+
 fetch("/api/transaction")
   .then(response => {
     return response.json();
