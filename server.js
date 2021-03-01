@@ -16,7 +16,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use(express.static("public"));
- const isDev=process.env.NODE_ENV === "development"? process.env.MONGODB_URI: process.env.MONGODB_URI;
+ const isDev=process.env.NODE_ENV === "development"? process.env.MONGODB_URI: require("dotenv").config(); ;
 
 
 mongoose.connect(isDev, {
