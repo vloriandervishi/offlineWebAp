@@ -5,7 +5,7 @@ const compression = require("compression");
 require("dotenv").config();
 // added stuff
 const PORT = process.env.PORT || 3001;
-//const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/localbudget";
+//const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/localbudget";  ss
 
 const app = express();
 
